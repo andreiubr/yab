@@ -25,7 +25,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/yarpc/yab/encoding"
+	"github.com/andreiubr/yab/encoding"
 )
 
 // Options are parsed from flags using go-flags.

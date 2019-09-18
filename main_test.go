@@ -31,9 +31,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yarpc/yab/encoding"
-	"github.com/yarpc/yab/plugin"
-	"github.com/yarpc/yab/transport"
+	"github.com/andreiubr/yab/encoding"
+	"github.com/andreiubr/yab/plugin"
+	"github.com/andreiubr/yab/transport"
 
 	"github.com/opentracing/opentracing-go"
 	"github.com/stretchr/testify/assert"
@@ -416,7 +416,7 @@ func TestBenchmarkIntegration(t *testing.T) {
 	main()
 }
 
-// Regression test https://github.com/yarpc/yab/issues/73
+// Regression test https://github.com/andreiubr/yab/issues/73
 func TestBenchmarkLowRPSDuration(t *testing.T) {
 	origArgs := os.Args
 	defer func() { os.Args = origArgs }()

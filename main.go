@@ -30,10 +30,10 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/yarpc/yab/encoding"
-	"github.com/yarpc/yab/peerprovider"
-	"github.com/yarpc/yab/plugin"
-	"github.com/yarpc/yab/transport"
+	"github.com/andreiubr/yab/encoding"
+	"github.com/andreiubr/yab/peerprovider"
+	"github.com/andreiubr/yab/plugin"
+	"github.com/andreiubr/yab/transport"
 
 	"github.com/casimir/xdg-go"
 	"github.com/jessevdk/go-flags"

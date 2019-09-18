@@ -6,7 +6,7 @@ package foo
 import (
 	"errors"
 	"fmt"
-	"github.com/yarpc/yab/testdata/yarpc/integration"
+	"github.com/andreiubr/yab/testdata/yarpc/integration"
 	"go.uber.org/thriftrw/wire"
 	"strings"
 )

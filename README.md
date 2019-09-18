@@ -10,7 +10,7 @@ currently supports making Thrift requests to both HTTP and TChannel services.
 
 If you have go installed, simply run the following to install the latest version:
 ```bash
-go get -u -f github.com/yarpc/yab
+go get -u -f github.com/andreiubr/yab
 ```
 
 This will install `yab` to `$GOPATH/bin/yab`.
@@ -170,7 +170,7 @@ connection (`--concurrency`).
 yab -t ~/keyvalue.thrift -p localhost:12345 keyvalue KeyValue::get -r '{"key": "hello"}' -d 5s --rps 100 --connections 4
 ```
 
-[releases]: https://github.com/yarpc/yab/releases
+[releases]: https://github.com/andreiubr/yab/releases
 [ci-img]: https://travis-ci.com/yarpc/yab.svg?branch=master
 [ci]: https://travis-ci.com/yarpc/yab
 [cov-img]: https://codecov.io/gh/yarpc/yab/branch/master/graph/badge.svg

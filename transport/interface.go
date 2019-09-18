@@ -65,10 +65,5 @@ type Transport interface {
 	Call(ctx context.Context, request *Request) (*Response, error)
 	Protocol() Protocol
 	Tracer() opentracing.Tracer
-}
-
-// TransportCloser is a Transport that can be closed.
-type TransportCloser interface {
-	Transport
 	io.Closer
 }

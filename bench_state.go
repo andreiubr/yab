@@ -25,8 +25,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/yarpc/yab/sorted"
-	"github.com/yarpc/yab/statsd"
+	"github.com/andreiubr/yab/sorted"
+	"github.com/andreiubr/yab/statsd"
 )
 
 type benchmarkState struct {

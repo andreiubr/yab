@@ -5,11 +5,11 @@ package fooclient
 
 import (
 	"context"
+	"github.com/andreiubr/yab/testdata/yarpc/integration"
 	"go.uber.org/thriftrw/wire"
+	"go.uber.org/yarpc"
 	"go.uber.org/yarpc/api/transport"
 	"go.uber.org/yarpc/encoding/thrift"
-	"go.uber.org/yarpc"
-	"github.com/yarpc/yab/testdata/yarpc/integration"
 )
 
 // Interface is a client for the Foo service.

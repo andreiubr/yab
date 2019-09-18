@@ -3,7 +3,7 @@ package limiter
 import (
 	"time"
 
-	"github.com/yarpc/yab/ratelimit"
+	"github.com/andreiubr/yab/ratelimit"
 
 	"go.uber.org/atomic"
 )

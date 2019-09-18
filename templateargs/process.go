@@ -3,7 +3,7 @@ package templateargs
 import (
 	"strconv"
 
-	"github.com/yarpc/yab/templateargs/interpolate"
+	"github.com/andreiubr/yab/templateargs/interpolate"
 
 	"gopkg.in/yaml.v2"
 )

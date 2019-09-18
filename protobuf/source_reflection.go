@@ -53,11 +53,13 @@ func NewDescriptorProviderReflection(args ReflectionArgs) (DescriptorProvider, e
 			"rpc-encoding": []string{"proto"},
 		})
 	return &grpcreflectSource{
+		conn:   conn,
 		client: grpcreflect.NewClient(metadataContext, pbClient),
 	}, nil
 }
 
 type grpcreflectSource struct {
+	conn   *grpc.ClientConn
 	client *grpcreflect.Client
 }
 
@@ -70,5 +72,6 @@ func (s *grpcreflectSource) FindSymbol(fullyQualifiedName string) (desc.Descript
 }
 
 func (s *grpcreflectSource) Close() {
+	s.conn.Close()
 	s.client.Reset()
 }

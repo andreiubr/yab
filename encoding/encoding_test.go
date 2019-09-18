@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/andreiubr/yab/transport"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/yarpc/yab/transport"
 )
 
 func TestEncodingUnmarshal(t *testing.T) {

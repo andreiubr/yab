@@ -27,7 +27,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yarpc/yab/templateargs"
+	"github.com/andreiubr/yab/templateargs"
 
 	"gopkg.in/yaml.v2"
 )

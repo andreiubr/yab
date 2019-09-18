@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/andreiubr/yab/statsd/statsdtest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"github.com/uber/tchannel-go/testutils"
-	"github.com/yarpc/yab/statsd/statsdtest"
 	"go.uber.org/zap"
 )
 

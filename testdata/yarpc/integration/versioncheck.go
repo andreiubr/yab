@@ -6,5 +6,5 @@ package integration
 import "go.uber.org/thriftrw/version"
 
 func init() {
-	version.CheckCompatWithGeneratedCodeAt("1.0.0", "github.com/yarpc/yab/testdata/yarpc/integration")
+	version.CheckCompatWithGeneratedCodeAt("1.0.0", "github.com/andreiubr/yab/testdata/yarpc/integration")
 }
