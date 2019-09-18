@@ -3,7 +3,7 @@
 set -e
 
 COVER=cover
-ROOT_PKG=github.com/yarpc/yab
+ROOT_PKG=github.com/andreiubr/yab
 
 if [[ -d "$COVER" ]]; then
 	rm -rf "$COVER"

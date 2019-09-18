@@ -25,10 +25,10 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/yarpc/yab/sorted"
-	"github.com/yarpc/yab/thrift"
-	"github.com/yarpc/yab/transport"
-	"github.com/yarpc/yab/unmarshal"
+	"github.com/andreiubr/yab/sorted"
+	"github.com/andreiubr/yab/thrift"
+	"github.com/andreiubr/yab/transport"
+	"github.com/andreiubr/yab/unmarshal"
 
 	"go.uber.org/thriftrw/compile"
 )

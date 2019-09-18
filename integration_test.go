@@ -31,10 +31,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yarpc/yab/testdata/gen-go/integration"
-	"github.com/yarpc/yab/testdata/protobuf/simple"
-	yintegration "github.com/yarpc/yab/testdata/yarpc/integration"
-	"github.com/yarpc/yab/testdata/yarpc/integration/fooserver"
+	"github.com/andreiubr/yab/testdata/gen-go/integration"
+	"github.com/andreiubr/yab/testdata/protobuf/simple"
+	yintegration "github.com/andreiubr/yab/testdata/yarpc/integration"
+	"github.com/andreiubr/yab/testdata/yarpc/integration/fooserver"
 
 	athrift "github.com/apache/thrift/lib/go/thrift"
 	"github.com/opentracing/opentracing-go"

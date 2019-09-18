@@ -29,9 +29,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yarpc/yab/limiter"
-	"github.com/yarpc/yab/statsd"
-	"github.com/yarpc/yab/transport"
+	"github.com/andreiubr/yab/limiter"
+	"github.com/andreiubr/yab/statsd"
+	"github.com/andreiubr/yab/transport"
 
 	"go.uber.org/zap"
 )

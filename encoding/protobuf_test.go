@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/yarpc/yab/protobuf"
-	"github.com/yarpc/yab/transport"
+	"github.com/andreiubr/yab/protobuf"
+	"github.com/andreiubr/yab/transport"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -5,9 +5,9 @@ package footest
 
 import (
 	"context"
-	"go.uber.org/yarpc"
+	"github.com/andreiubr/yab/testdata/yarpc/integration/fooclient"
 	"github.com/golang/mock/gomock"
-	"github.com/yarpc/yab/testdata/yarpc/integration/fooclient"
+	"go.uber.org/yarpc"
 )
 
 // MockClient implements a gomock-compatible mock client for service

@@ -27,8 +27,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yarpc/yab/statsd/statsdtest"
-	"github.com/yarpc/yab/transport"
+	"github.com/andreiubr/yab/statsd/statsdtest"
+	"github.com/andreiubr/yab/transport"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/uber/tchannel-go/testutils"

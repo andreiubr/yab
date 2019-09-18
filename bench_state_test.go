@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/yarpc/yab/statsd"
+	"github.com/andreiubr/yab/statsd"
 
 	"github.com/stretchr/testify/assert"
 )

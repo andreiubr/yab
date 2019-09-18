@@ -23,7 +23,7 @@ package encoding
 import (
 	"testing"
 
-	"github.com/yarpc/yab/internal/thrifttest"
+	"github.com/andreiubr/yab/internal/thrifttest"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -29,9 +29,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yarpc/yab/encoding"
-	"github.com/yarpc/yab/protobuf"
-	"github.com/yarpc/yab/transport"
+	"github.com/andreiubr/yab/encoding"
+	"github.com/andreiubr/yab/protobuf"
+	"github.com/andreiubr/yab/transport"
 
 	"gopkg.in/yaml.v2"
 )

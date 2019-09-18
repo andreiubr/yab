@@ -24,7 +24,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/yarpc/yab/statsd"
+	"github.com/andreiubr/yab/statsd"
 )
 
 type fakeStatsd struct {

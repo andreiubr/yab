@@ -1,4 +1,4 @@
-package: github.com/yarpc/yab
+package: github.com/andreiubr/yab
 import:
 - package: github.com/cactus/go-statsd-client
 - package: github.com/casimir/xdg-go

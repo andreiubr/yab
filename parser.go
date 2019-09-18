@@ -1,8 +1,8 @@
 package main
 
 import (
+	"github.com/andreiubr/yab/plugin"
 	flags "github.com/jessevdk/go-flags"
-	"github.com/yarpc/yab/plugin"
 )
 
 // provides a bridge between the plugin::Parser interface and the go-flags::Parser struct

@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"errors"
 
+	"github.com/andreiubr/yab/transport"
 	"github.com/golang/protobuf/jsonpb"
 	"github.com/golang/protobuf/proto"
-	"github.com/yarpc/yab/transport"
 	"go.uber.org/yarpc/pkg/procedure"
 	"google.golang.org/grpc/health/grpc_health_v1"
 )

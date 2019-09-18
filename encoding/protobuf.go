@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/yarpc/yab/protobuf"
-	"github.com/yarpc/yab/transport"
-	"github.com/yarpc/yab/unmarshal"
+	"github.com/andreiubr/yab/protobuf"
+	"github.com/andreiubr/yab/transport"
+	"github.com/andreiubr/yab/unmarshal"
 
 	"github.com/golang/protobuf/proto"
 	"github.com/jhump/protoreflect/desc"
