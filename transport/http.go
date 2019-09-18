@@ -74,7 +74,9 @@ func NewHTTP(opts HTTPOptions) (Transport, error) {
 		opts: opts,
 		// Use independent HTTP clients for each transport.
 		client: &http.Client{
-			Transport: &http.Transport{},
+			Transport: &http.Transport{
+				DisableKeepAlives: true,
+			},
 		},
 		tracer: opts.Tracer,
 	}, nil
@@ -174,4 +176,12 @@ func (h *httpTransport) Call(ctx context.Context, r *Request) (*Response, error)
 			"statusCode": resp.StatusCode,
 		},
 	}, nil
+}
+
+func (h *httpTransport) Close() error {
+	if h.client == nil {
+		return errors.New("client is nil")
+	}
+	h.client.CloseIdleConnections()
+	return nil
 }

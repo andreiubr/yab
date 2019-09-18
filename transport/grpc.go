@@ -56,7 +56,7 @@ type GRPCOptions struct {
 }
 
 // NewGRPC returns a transport that calls a GRPC service.
-func NewGRPC(options GRPCOptions) (TransportCloser, error) {
+func NewGRPC(options GRPCOptions) (Transport, error) {
 	return newGRPC(options)
 }
 

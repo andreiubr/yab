@@ -23,6 +23,7 @@ package transport
 import (
 	"bytes"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -39,6 +40,7 @@ import (
 const rawHeadersKey = "_raw_"
 
 type tchan struct {
+	ch          *tchannel.Channel
 	sc          *tchannel.SubChannel
 	callOptions *tchannel.CallOptions
 	tracer      opentracing.Tracer
@@ -124,10 +126,19 @@ func NewTChannel(opts TChannelOptions) (Transport, error) {
 	applyTChanOptions(callOpts, opts.TransportOpts)
 
 	return &tchan{
+		ch:          ch,
 		sc:          ch.GetSubChannel(opts.TargetService),
 		callOptions: callOpts,
 		tracer:      opts.Tracer,
 	}, nil
+}
+
+func (t *tchan) Close() error {
+	if t.ch == nil {
+		return errors.New("channel is not initialized")
+	}
+	t.ch.Close()
+	return nil
 }
 
 func (t *tchan) Tracer() opentracing.Tracer {
