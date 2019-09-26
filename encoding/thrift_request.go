@@ -30,7 +30,9 @@ import (
 	"github.com/andreiubr/yab/transport"
 	"github.com/andreiubr/yab/unmarshal"
 
-	"go.uber.org/thriftrw/compile"
+	// "go.uber.org/thriftrw/compile"
+	"github.com/andreiubr/yab/compile"
+	"github.com/andreiubr/yab/utils"
 )
 
 const _multiplexedSeparator = ":"
@@ -54,7 +56,7 @@ func NewThrift(thriftFile, methodName string, multiplexed bool) (Serializer, err
 	if thriftFile == "" {
 		return nil, ErrSpecifyThriftFile
 	}
-	if isFileMissing(thriftFile) {
+	if !utils.IsFileContent(thriftFile) && isFileMissing(thriftFile) {
 		return nil, fmt.Errorf("cannot find Thrift file: %q", thriftFile)
 	}
 

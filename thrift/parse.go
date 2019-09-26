@@ -27,18 +27,19 @@ import (
 	"fmt"
 	"strings"
 
+	internalcompile "github.com/andreiubr/yab/compile"
 	"go.uber.org/thriftrw/compile"
 	"go.uber.org/thriftrw/protocol"
 	"go.uber.org/thriftrw/wire"
 )
 
 // Parse parses the given Thrift file.
-func Parse(file string) (*compile.Module, error) {
-	module, err := compile.Compile(file, compile.NonStrict())
+func Parse(file string) (*internalcompile.Module, error) {
+	module, err := internalcompile.Compile(file, internalcompile.NonStrict())
 	// thriftrw wraps errors, so we can't use os.IsNotExist here.
 	if err != nil {
 		// The user may have left off the ".thrift", so try appending .thrift
-		if appendedModule, err2 := compile.Compile(file+".thrift", compile.NonStrict()); err2 == nil {
+		if appendedModule, err2 := internalcompile.Compile(file+".thrift", internalcompile.NonStrict()); err2 == nil {
 			module = appendedModule
 			err = nil
 		}
