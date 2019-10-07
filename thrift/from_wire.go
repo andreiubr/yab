@@ -24,7 +24,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"go.uber.org/thriftrw/compile"
+	// "go.uber.org/thriftrw/compile"
+	"github.com/andreiubr/yab/compile"
 	"go.uber.org/thriftrw/wire"
 )
 

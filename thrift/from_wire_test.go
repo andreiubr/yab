@@ -27,7 +27,9 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 	"go.uber.org/thriftrw/ast"
-	"go.uber.org/thriftrw/compile"
+
+	// "go.uber.org/thriftrw/compile"
+	"github.com/andreiubr/yab/compile"
 	"go.uber.org/thriftrw/wire"
 )
 

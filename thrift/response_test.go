@@ -26,7 +26,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-	"go.uber.org/thriftrw/compile"
+	// "go.uber.org/thriftrw/compile"
+	"github.com/andreiubr/yab/compile"
 	"go.uber.org/thriftrw/protocol"
 	"go.uber.org/thriftrw/wire"
 )

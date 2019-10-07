@@ -26,7 +26,8 @@ import (
 
 	"github.com/andreiubr/yab/sorted"
 
-	"go.uber.org/thriftrw/compile"
+	// "go.uber.org/thriftrw/compile"
+	"github.com/andreiubr/yab/compile"
 	"go.uber.org/thriftrw/wire"
 )
 

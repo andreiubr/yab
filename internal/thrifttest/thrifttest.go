@@ -26,7 +26,8 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	"go.uber.org/thriftrw/compile"
+	// "go.uber.org/thriftrw/compile"
+	"github.com/andreiubr/yab/compile"
 )
 
 // DummyFS is an in-memory implementation of the Filesystem interface.
