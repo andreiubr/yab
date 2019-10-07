@@ -33,7 +33,9 @@ import (
 	"github.com/andreiubr/yab/transport"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"go.uber.org/thriftrw/compile"
+
+	// "go.uber.org/thriftrw/compile"
+	"github.com/andreiubr/yab/compile"
 )
 
 func getSpec(t *testing.T, thriftFile string) compile.TypeSpec {
