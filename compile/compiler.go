@@ -22,7 +22,6 @@ package compile
 
 import (
 	"path/filepath"
-	"strings"
 
 	"github.com/andreiubr/yab/utils"
 	"go.uber.org/thriftrw/ast"
@@ -119,9 +118,12 @@ func (c compiler) link(m *Module) error {
 //
 // The types aren't actually compiled in this step.
 func (c compiler) load(p string) (*Module, error) {
-	var s []byte
+	var (
+		s   []byte
+		err error
+	)
 	if !utils.IsFileContent(p) {
-		p, err := c.fs.Abs(p)
+		p, err = c.fs.Abs(p)
 		if err != nil {
 			return nil, err
 		}
@@ -136,7 +138,10 @@ func (c compiler) load(p string) (*Module, error) {
 			return nil, fileReadError{Path: p, Reason: err}
 		}
 	} else {
-		s = []byte(strings.TrimPrefix(p, utils.OrchThriftPrefix))
+		s, err = utils.RemoveOrchThriftPrefix(p)
+		if err != nil {
+			return nil, err
+		}
 	}
 
 	prog, err := idl.Parse(s)
