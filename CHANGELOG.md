@@ -1,6 +1,20 @@
 Changelog
 =========
 
+# 0.17.0 (2020-03-24)
+* Fix gRPC reflection requests not propogating routing key and routing delegate.
+* When Thrift method is not found, list all available methdods in service::method
+  to match the passed-in method format.
+* Improved errors when Proto service is not found by including
+  list of all available services.
+
+# 0.16.1 (2019-10-02)
+* Fix bug that prevented nested JSON to be marshalled into Proto encoded
+  requests.
+* Fix bug that required users to explictly specify encoding using `-e` when
+  making health requests. Now health requests default to Proto when using gRPC
+  and Thrift when using TChannel.
+
 # 0.16.0 (2019-09-09)
 * Add support for grpc/proto when using `--health`.
 * Fix bug that prevented yab templates to work with proto. Simple YAML yab
