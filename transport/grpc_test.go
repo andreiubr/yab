@@ -174,7 +174,7 @@ func doWithGRPCTestEnv(
 
 type grpcTestEnv struct {
 	Caller         string
-	Transport      TransportCloser
+	Transport      Transport
 	YARPCTransport *grpc.Transport
 	YARPCInbounds  []*grpc.Inbound
 }
