@@ -8,7 +8,7 @@ import (
 
 	"github.com/jhump/protoreflect/desc"
 	"github.com/jhump/protoreflect/grpcreflect"
-	"github.com/yarpc/yab/encoding/encodingerror"
+	"github.com/andreiubr/yab/encoding/encodingerror"
 	yproto "go.uber.org/yarpc/encoding/protobuf"
 	ygrpc "go.uber.org/yarpc/transport/grpc"
 	"google.golang.org/grpc"

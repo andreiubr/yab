@@ -32,8 +32,8 @@ import (
 	"github.com/opentracing/opentracing-go"
 	"github.com/stretchr/testify/require"
 	"github.com/uber/jaeger-client-go"
-	"github.com/yarpc/yab/encoding"
-	"github.com/yarpc/yab/transport"
+	"github.com/andreiubr/yab/encoding"
+	"github.com/andreiubr/yab/transport"
 	"go.uber.org/zap"
 )
 

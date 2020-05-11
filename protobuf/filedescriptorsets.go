@@ -7,7 +7,7 @@ import (
 	"github.com/golang/protobuf/proto"
 	"github.com/golang/protobuf/protoc-gen-go/descriptor"
 	"github.com/jhump/protoreflect/desc"
-	"github.com/yarpc/yab/encoding/encodingerror"
+	"github.com/andreiubr/yab/encoding/encodingerror"
 )
 
 // NewDescriptorProviderFileDescriptorSetBins creates a DescriptorSource that is backed by the named files, whose contents
